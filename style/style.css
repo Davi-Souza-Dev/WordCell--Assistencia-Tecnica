@@ -54,9 +54,10 @@ article.inicio >  h1{
 
 article.inicio > p{
     color: var(--cor4);
-    font-size: 20px;
+    font-size: 13px;
     background: rgba(78, 78, 78, 0.42);
     font-family: var(--fontes);
+    text-align: center;
 }
 
 /*MENU*/
@@ -117,7 +118,7 @@ article.headline{
 
 article.headline > h1{
     color: var(--cor3);
-    font-size: 30px;
+    font-size: 25px;
     width: 100%;
     font-family: var(--fontep);
     padding: 10px;
@@ -130,6 +131,7 @@ article.headline > p{
     padding: 10px;
     align-self: center;
     text-align: justify;
+    text-indent: 20px;
 }
 
 article.headline > iframe{
@@ -154,14 +156,13 @@ article.faq > h1{
 
 /*CAROSSEL*/
 .slider {
-    width: 290px;;
+    width: 290px;
     text-align: center;
     overflow: hidden;
   }
   
   .slides {
     display: flex;
-    
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     
@@ -200,7 +201,7 @@ article.faq > h1{
     transition: transform 0.5s;
     border: 2px var(--cor5) solid;
     position: relative;
-    
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -211,20 +212,24 @@ article.faq > h1{
   .slides > div > h1{
     color: black;
     font-family: "Roboto", Condensed;
-    font-size: 30px;
+    font-size: 15px;
+    padding-top: 10px;
     font-style: normal;
     font-weight: 700;
+    text-align: center;
   }
 
   .slides > div > p{
     color: black;
     font-family: "Roboto" Condensed;
-    font-size: 13px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 80%;
     text-align: justify;
+    text-indent: 10px;
+    padding: 20px;
   }
   .author-info {
     background: rgba(255, 255, 255, 0.75);
@@ -395,6 +400,10 @@ article.redes > div#contatos > div{
 article.redes > div#contatos > div > a > img{
     width: 50px;
     height: 50px;
+}
+
+article.redes > div#contatos > div:hover{
+  background-color: var(--cor3);
 }
 
 footer >p{
