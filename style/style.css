@@ -17,11 +17,16 @@
     --cor3: #002C4C;
     --cor4: white;
     --cor5: #0F5FA6;
+    --cor6: #1EB9B9;
     --fontep: "Principal" , sans-serif;
     --fontes: "Roboto", "Arial", sans-serif;
 }
-body{
+body , html{
     background-color: var(--cor2);
+  
+}
+html{
+  overflow-x: hidden;
 }
 nav{
     height: 50px;
@@ -31,6 +36,12 @@ article{
     justify-content: center;
     align-self: center;
     flex-direction: column;
+}
+
+article > h1{
+  font-size: 30px;
+  font-family: var(--fontep);
+  color: var(--cor3);
 }
 article.inicio{
     background-image: url(../imagens/fundo.png);
@@ -44,12 +55,8 @@ article.inicio{
     flex-direction: column;
     background-attachment: fixed;
 }
-
-article.inicio >  h1{
-    font-size: 30px;
-    font-family: var(--fontep);
-    color: var(--cor1);
-    background: rgba(78, 78, 78, 0.42);
+article.inicio > h1{
+  color: var(--cor1);
 }
 
 article.inicio > p{
@@ -61,7 +68,6 @@ article.inicio > p{
 }
 
 /*MENU*/
-
 .topnav {
     overflow: hidden;
     background-color: var(--cor1);
@@ -74,10 +80,12 @@ article.inicio > p{
   }
   
   .menu-icon{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     float: right;
+    padding: 10px;
   }
+
   
   .topnav a {
     color: var(--cor3);
@@ -86,14 +94,23 @@ article.inicio > p{
     font-size: 17px;
     display: block;
   }
+
+  .topnav a:hover {
+   color: var(--cor4);
+   background-color: var(--cor3);
+  }
+  
+  a.icon:hover{
+    background-color: var(--cor1);
+  }
   
   .topnav a.icon {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 10px;
     background-image: url(../imagens/menu.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -106,10 +123,45 @@ article.inicio > p{
     height: 50px;
   }
 /*FIM MENU*/
+/*SUBMENU*/
+nav.submenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3px;
+}
+
+nav.submenu > a {
+  text-decoration: none;
+}
+
+nav.submenu > a > div.subcategoria{
+  height: 20px;
+  width: 60px;
+  border: 2px solid var(--cor3);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1EB9B9;
+}
+
+nav.submenu > a > div.subcategoria > p{
+ color: var(--cor4);
+ font-size: 10px;
+ padding: 5px;
+ text-align: center;
+ font-weight: bold;
+}
+
+/*FIM SUBMENU*/
 
 article.headline{ 
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     border-top: 5px solid var(--cor3);
@@ -277,7 +329,7 @@ article.opcoes{
 article.opcoes > h1{
     color: var(--cor3);
     margin-top: 45px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: var(--fontep);
 }
 
@@ -321,6 +373,7 @@ div.escolha > a > .btn{
     font-size: 10px;
     color: var(--cor4);
 }
+
 
 div.escolha > a > .btn:hover{
     border-radius: 20px;
@@ -414,4 +467,104 @@ footer >p{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/*Configuração dos procutos*/
+
+article.produtos{
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+article.produtos > h1{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+article.produtos > div.card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 150px;
+  border: 3px solid var(--cor3);
+  border-radius: 10px;
+}
+
+article.produtos > .card.promo{
+  border: 3px solid red;
+}
+
+article.produtos > .card.promo::before{
+  content: 'OFERTA LIMITADA';
+  height: 20px;
+  width: 100%;
+  background-color: red;
+  color: var(--cor4);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 13px;
+  font-family: var(--fontes);
+}
+
+
+.card > img{
+  width: 100%;
+  height: 120px;
+  border-bottom: var(--cor3) solid 3px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.card > img.card.promo{
+  border-bottom: red solid 3px;
+  border-radius: 0px;
+}
+
+.card > div.btn{
+  width: 100%;
+  height: 20px;
+  background-color: var(--cor3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > div.promo{
+  background-color: red;
+}
+
+.card > div.btn > a{
+  text-decoration: none;
+  color: var(--cor4);
+  font-size: 12px;
+  font-family: var(--fontes);
+}
+
+.card > p.nome{
+  font-size: 13px;
+  font-weight: bolder;
+  font-family: var(--fontes);
+  text-align: center;
+}
+
+.card > p.desc{
+  font-family: var(--fontes);
+  text-align: justify;
+  font-size: 10px;
+  padding: 2px;
+}
+
+.card > p.valor{
+  font-size: 20px;
+  font-family: var(--fontes);
+}
+
+.card > p.valor::before{
+  content: 'R$';
 }
