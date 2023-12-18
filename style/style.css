@@ -265,7 +265,6 @@ article.faq{
     flex-direction: column;
     animation: aparecer;
     animation-duration: 0.5s;
-
 }
 
 article.faq > h1{
@@ -343,7 +342,7 @@ article.faq > h1{
   .slides > div > p{
     color: black;
     font-family: "Roboto" Condensed;
-    font-size: 17px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
