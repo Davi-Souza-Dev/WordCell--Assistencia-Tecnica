@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/*Tablets*/
+
+@media screen and (min-width:480px) {
+    nav.menu-desktop{
+        display: flex;
+    }
+
+    nav.menu-desktop > div.container{
+        margin-right: 20px;
+    }
+
+    nav.menu-mobile{
+        display: none;
+    }
+    .topnav {
+        display: none;
+    }
+
+    article > h1{
+        font-size: 50px;
+        font-family: var(--fontep);
+        color: var(--cor3);
+    }
+
+    article.inicio > p{
+        width: 80%;
+        font-size: 20px;
+    }
+
+    article.headline > h1{
+        font-size: 40px;
+    }
+    
+    article.headline > p{
+        width: 80%;
+        font-size: 17px;
+    }
+
+    article.headline > iframe{
+        width: 400px;
+        height: 300px; 
+    }
+
+    article.opcoes > div.escolha{
+        width: 80%;
+        height: 200px;
+        border: 3px solid black;
+    }
+
+    article.servicos > img{
+        width: 80%;
+        height: 80%;
+        border-radius: 10px;
+        border: 5px solid var(--cor5);
+      }
+}
+
+/*COMPUTADOR*/
+
+@media screen and (min-width: 769px) {
+    
+    article.headline > p{
+        width: 50%;
+        font-size: 17px;
+    }
+    article.opcoes > div.escolha{
+        width: 50%;
+        height: 200px;
+        border: 3px solid black;
+    }
+
+    article#local > iframe{
+        width: 50%;
+        height: 400px;
+        align-self: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 13px black;
+    }
+
+    article.redes > div#contatos{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px 20px;
+    }
+
+    article.produtos > div.card{
+        width: 150px;
+      }
+
+    article.produtos > .card.promo{
+        border: 3px solid red;
+      }
+      
+      article.produtos > .card.promo::before{
+        height: 20px;
+        width: 100%;
+      }
+      
+    
+}

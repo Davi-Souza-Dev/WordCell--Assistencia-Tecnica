@@ -4,41 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <title>Acessorios</title>
 </head>
 <body>
-    <header >
-        <nav>
-            <!--MENU-->
-            <div class="topnav">
-                <img src="imagens/logo.png" id="logo">
-                <div id="myLinks">
-                  <a href="index.html">Home</a>
-                  <a href="acessorios.html">Acessorios</a>
-                  <a href="celulares.html">Celulares</a>
-                  <a href="servicos.html">Serviços</a>
+    <header>
+        <nav class="menu-desktop">
+            <a href="index.html"><img  id="logo" src="imagens/logo.png" alt="logo"></a>
+            <div class="container">
+              <a href="index.html">Home</a>
+              <a href="acessorios.html">Acessorios</a>
+              <a href="celulares.html">Celulares</a>
+              <a href="servicos.html">Serviços</a>
+            </div>
+          </nav>
+          <nav class="menu-mobile">
+              <!--MENU-->
+              <div class="topnav">
+                  <img src="imagens/logo.png" id="logo">
+                  <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="acessorios.html">Acessorios</a>
+                    <a href="celulares.html">Celulares</a>
+                    <a href="servicos.html">Serviços</a>
+                  </div>
+                  <a href="javascript:void(0);" class="icon"   onclick="myFunction()">
+                    <i class="menu-icon"></i>
+                  </a>
                 </div>
-                <a href="javascript:void(0);" class="icon"   onclick="myFunction()">
-                  <i class="menu-icon"></i>
-                </a>
-              </div>
-          
-              <!-- End smartphone / tablet look -->
-              </div>
-          
-              <script>
-              function myFunction() {
-                var x = document.getElementById("myLinks");
-                if (x.style.display === "block") {
-                  x.style.display = "none";
-                } else {
-                  x.style.display = "block";
+            
+                <!-- End smartphone / tablet look -->
+            
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
                 }
-              }
-              </script>
-            <!--FIM MENU-->
-        </nav>
+                </script>
+              <!--FIM MENU-->
+          </nav>
         <nav class="submenu">
             <a href="#capinha">
                 <div class="subcategoria">
@@ -116,6 +125,7 @@
                 </p>
                 <p class="desc">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nostrum molestiae assumenda quos deserunt eaque ratione aliquam? Omnis et praesentium culpa quasi nihil, deleniti, adipisci similique hic, voluptatum consequuntur unde.
                 </p>
                 <p class="valor">
                     9,99
