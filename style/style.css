@@ -583,7 +583,7 @@ article.produtos > .card.promo{
 }
 
 article.produtos > .card.promo::before{
-  content: 'OFERTA LIMITADA';
+  content: 'OFERTA';
   height: 20px;
   width: 100%;
   background-color: red;
