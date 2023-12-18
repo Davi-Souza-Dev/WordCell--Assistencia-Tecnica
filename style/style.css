@@ -342,7 +342,7 @@ article.faq > h1{
   .slides > div > p{
     color: black;
     font-family: "Roboto" Condensed;
-    font-size: 14px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -350,6 +350,7 @@ article.faq > h1{
     text-align: justify;
     text-indent: 10px;
     padding: 20px;
+    overflow-y: scroll;
   }
   .author-info {
     background: rgba(255, 255, 255, 0.75);
