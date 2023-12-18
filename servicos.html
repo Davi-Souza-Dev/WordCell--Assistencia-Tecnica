@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <title>Serviços</title>
+</head>
+<body>
+    <header >
+        <nav>
+            <!--MENU-->
+            <div class="topnav">
+                <img src="imagens/logo.png" id="logo">
+                <div id="myLinks">
+                  <a href="index.html">Home</a>
+                  <a href="acessorios.html">Acessorios</a>
+                  <a href="celulares.html">Celulares</a>
+                  <a href="servicos.html">Serviços</a>
+                </div>
+                <a href="javascript:void(0);" class="icon"   onclick="myFunction()">
+                  <i class="menu-icon"></i>
+                </a>
+              </div>
+          
+              <!-- End smartphone / tablet look -->
+              </div>
+          
+              <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+              </script>
+            <!--FIM MENU-->
+        </nav>
+    </header>
+    <section>
+        <article class="servicos">
+            <h1>SERVIÇO</h1>
+            <img src="imagens/serviço.png" alt="exemplo serviço">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores amet eveniet error temporibus blanditiis tenetur placeat enim impedit dolore. Vitae esse repudiandae exercitationem odio quia fuga pariatur veritatis. Nobis.</p>
+            <div class="btn">
+                <a href="">
+                    <p>CHAMAR AGORA</p>
+                </a>
+            </div>
+        </article>
+        <article class="servicos secundario">
+            <h1>SERVIÇO</h1>
+            <img src="imagens/serviço.png" alt="exemplo serviço">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores amet eveniet error temporibus blanditiis tenetur placeat enim impedit dolore. Vitae esse repudiandae exercitationem odio quia fuga pariatur veritatis. Nobis.</p>
+            <div class="btn">
+                <a href="">
+                    <p>CHAMAR AGORA</p>
+                </a>
+            </div>
+        </article>
+        
+
+    </section>
+</body>
+</html>
