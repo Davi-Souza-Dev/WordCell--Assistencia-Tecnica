@@ -283,7 +283,7 @@ article.headline > p{
 }
 
 article.headline > iframe{
-    width: 400px;
+    width: 200px;
     height: 200px; 
     flex-shrink: 30;
     padding: 20px;
