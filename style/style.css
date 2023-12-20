@@ -678,6 +678,7 @@ article.produtos > .card.promo::before{
 ::-webkit-scrollbar{
   background-color: transparent;
   color: white;
+  width: 0px;
 }
 .card > p.valorpromo{
   font-size: 12px;
