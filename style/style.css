@@ -269,6 +269,7 @@ article.headline > h1{
 }
 
 article.headline > p{
+    margin: 10px 0px 10px 0px;
     font-size: 13px;
     font-family: var(--fontes);
     width: 80%;
@@ -583,6 +584,16 @@ article.produtos{
   gap: 10px 20px;
 }
 
+article.celulares{
+  margin-top: 30px;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
 article.produtos > h1{
   width: 100%;
   margin-bottom: 10px;
@@ -601,6 +612,29 @@ article.produtos > div.card{
   border-radius: 10px;
   background-color: white;
   scrollbar-color:transparent;
+}
+
+article.celulares > div.card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 160px;
+  height: 400px;
+  border: 3px solid var(--cor3);
+  border-radius: 10px;
+  background-color: white;
+  scrollbar-color:transparent;
+}
+
+article.celulares > div.card.celular{
+  height: 240px;
+
+}
+
+.card > img.celular{
+  width: 160px;
+  height: 200px;
 }
 
 article.produtos > .card.promo{
@@ -650,6 +684,13 @@ article.produtos > .card.promo::before{
   color: var(--cor4);
   font-size: 12px;
   font-family: var(--fontes);
+}
+
+.card > div.btn > a:hover{
+  text-transform: uppercase;
+  color: var(--cor2);
+  font-weight: bolder;
+  transition: 0.3s;
 }
 
 .card > p.nome{
