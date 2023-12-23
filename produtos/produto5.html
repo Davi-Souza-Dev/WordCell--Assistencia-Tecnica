@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/produtos.css">
+    <link rel="shortcut icon" href="../imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/media.css">
+    <title>Produto</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-desktop">
+          <a href="../index.html"><img  id="logo" src="../imagens/logo.png" alt="logo"></a>
+          <div class="container">
+            <a href="../index.html">Home</a>
+            <a href="../acessorios.html">Acessorios</a>
+            <a href="../celulares.html">Celulares</a>
+            <a href="../servicos.html">Serviços</a>
+          </div>
+        </nav>
+        <nav class="menu-mobile">
+            <!--MENU-->
+            <div class="topnav">
+                <img src="../imagens/logo.png" id="logo">
+                <div id="myLinks">
+                  <a href="../index.html">Home</a>
+                  <a href="../acessorios.html">Acessorios</a>
+                  <a href="../celulares.html">Celulares</a>
+                  <a href="../servicos.html">Serviços</a>
+                </div>
+                <a href="javascript:void(0);" class="icon"   onclick="myFunction()">
+                  <i class="menu-icon"></i>
+                </a>
+              </div>
+          
+              <!-- End smartphone / tablet look -->
+          
+              <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+              </script>
+            <!--FIM MENU-->
+        </nav>
+    </header>
+    <section>
+        <article class="info">
+          <img src="../imagens/produtos/produto5.jpg" alt="fotoproduto">
+            <h1>Ring Light Iluminador</h1>
+            <p> Tecnologia de conexão	‎USB <br>
+              Fabricante	‎G-Light <br>
+              Dimensões da embalagem	‎26 x 26 x 8 cm; 2 Quilogramas <br>
+              ASIN	‎B08WXBRRD9 <br>
+              Peso do produto	‎2 Kilograms <br>
+              EAN	‎7899605546579 <br>.</p>
+            <p class="valor"></p>
+            <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Ol%C3%A1,%20gostaria%20de%20comprar%20o%20ring%20light%20que%20v%C3%AD%20no%20site." target="_blank">
+                <div class="btn">PEDIR</div>
+            </a>
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/produtos.css">
+    <link rel="stylesheet" href="style/media.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-desktop">
+            <a href="index.html"><img  id="logo" src="imagens/logo.png" alt="logo"></a>
+            <div class="container">
+              <a href="index.html">Home</a>
+              <a href="acessorios.html">Acessorios</a>
+              <a href="celulares.html">Celulares</a>
+              <a href="servicos.html">Serviços</a>
+            </div>
+          </nav>
+          <nav class="menu-mobile">
+              <!--MENU-->
+              <div class="topnav">
+                  <img src="imagens/logo.png" id="logo">
+                  <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="acessorios.html">Acessorios</a>
+                    <a href="celulares.html">Celulares</a>
+                    <a href="servicos.html">Serviços</a>
+                  </div>
+                  <a href="javascript:void(0);" class="icon"   onclick="myFunction()">
+                    <i class="menu-icon"></i>
+                  </a>
+                </div>
+            
+                <!-- End smartphone / tablet look -->
+            
+                <script>
+                function myFunction() {
+                  var x = document.getElementById("myLinks");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
+              <!--FIM MENU-->
+          </nav>
+        <nav class="submenu">
+            <a href="#fone">
+                <div class="subcategoria">
+                    <p>FONES</p>
+                </div>
+            </a>
+            <a href="#capinha">
+                <div class="subcategoria">
+                    <p>CAPINHAS</p>
+                </div>
+            </a>
+            <a href="#som">
+                <div class="subcategoria">
+                    <p>SOM</p>
+                </div>
+            </a>
+            <a href="#outro">
+                <div class="subcategoria">
+                    <p>OUTROS</p>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <section>
+        <article class="produtos">
+            <h1>MAIS VENDIDOS NA LOJA</h1>
+            <div class="base">
+                <div class="detalhe">
+                    <h1 class="name">Ring Light Iluminador</h1>
+                    <img src="imagens/produtos/produto5.jpg" alt="fotoproduto">
+                    <p class="valor">39,99</p>
+                    <a href="produtos/produto5.html">
+                        <div class="botao">VER INFORMAÇÔES</div>
+                    </a>
+                </div>
+            </div>
+            <div class="base">
+                <div class="detalhe">
+                    <h1 class="name">2.4g wireless controller gamepad</h1>
+                    <img src="imagens/produtos/produto9.jpg" alt="fotoproduto">
+                    <p class="valor">99,99</p>
+                    <a href="produtos/produto5.html">
+                        <div class="botao">VER INFORMAÇÔES</div>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
