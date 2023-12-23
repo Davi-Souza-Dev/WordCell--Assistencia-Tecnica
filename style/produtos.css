@@ -5,6 +5,12 @@
   padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: "Principal";
+    src: url(../fontes/Inlanders\ Demo.otf);
+}
+
 :root{
   --cor1: #22F2F2;
   --cor2: #C6FFFF;
@@ -39,7 +45,7 @@ article.produtos > h1{
     align-items: center;
     background-color: var(--cor7);
     width: 130px;
-    height: 220px;
+    height: 240px;
     border-radius: 10px;
     margin: 10px;
   }
@@ -50,17 +56,19 @@ article.produtos > h1{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 240px;
     margin-top: 10px;
-    border-radius: 30px 30px 10px 10px;
+    border-radius: 20px 20px 10px 10px;
     background-color: var(--cor4);
     position: absolute;
   }
   
   div.detalhe > h1.name{
-    font-size: 18px;
+    font-size: 15px;
     align-self: center;
     text-align: center;
     padding-bottom: 10px;
+    padding-top: 10px;
   }
   
   div.detalhe > img{
@@ -94,11 +102,33 @@ article.produtos > h1{
     font-family: var(--fontes);
   }
 /*Configuração das informaçoes*/
-
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
 article.info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -115,19 +145,34 @@ article.info{
   article.info > h1{
     font-size: 30px;
     margin-top: 20px;
+    font-family: var(--fontes);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
   }
   
   article.info > p{
     width: 70%;
     font-size: 17px;
+    text-align: center;
+    padding: 10px;
   }
   
   article.info > a{
     text-decoration: none;
   }
-  
+
+  article.info > p.valor{
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  article.info > p.valor::before{
+    content: 'R$: ';
+  }
+
   article.info > a > div{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,7 +185,7 @@ article.info{
     text-align: center;
     font-weight: bolder;
     font-family: var(--fontes);
-  
+  	animation: heartbeat 2s ease-in-out infinite both;
   }
   
   /*Fim das informações*/
