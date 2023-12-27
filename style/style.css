@@ -158,12 +158,14 @@ article.inicio > p{
 
 nav.menu-mobile{
   display: block;
+  z-index: 1;
 }
 .topnav {
     overflow: hidden;
     background-color: var(--cor1);
     position: relative;
     border-color: var(--cor3);
+    z-index: 1;
   }
   
   .topnav #myLinks {
@@ -716,11 +718,7 @@ article.produtos > .card.promo::before{
   font-size: 20px;
   font-family: var(--fontes);
 }
-::-webkit-scrollbar{
-  background-color: transparent;
-  color: white;
-  width: 0px;
-}
+
 .card > p.valorpromo{
   font-size: 12px;
   font-family: var(--fontes);
