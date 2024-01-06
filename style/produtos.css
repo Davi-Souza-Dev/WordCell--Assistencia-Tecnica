@@ -24,11 +24,25 @@
   
 }
 
+@keyframes slideright {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translate(0);
+  }
+}
+
 article.produtos{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  overflow: hidden;
+  animation: slideright 2ms ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 25%;
+  view-timeline-inset: 50%;
 }
 article.produtos > h1{
     width: 100%;
@@ -48,6 +62,7 @@ article.produtos > h1{
     height: 240px;
     border-radius: 10px;
     margin: 10px;
+
   }
   
   article.produtos > div.base > div.detalhe{
