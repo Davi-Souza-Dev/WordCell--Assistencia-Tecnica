@@ -234,14 +234,14 @@ section.intro > a > div{
   border: 2px solid #000AFF;
   background: #22F2F2;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 107px;
-  height: 20px;
+  width: 200px;
+  height: 50px;
   color: #000;
   font-family: var(--fontes);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 50px;
   text-align: center;
   margin-top: 15px;
 }
@@ -982,3 +982,44 @@ article.secundario{
 article.secundario > div.btn{
   border-color: var(--cor2);
 }
+
+/*Dúvidas*/
+  .accordion {
+    background-color: var(--cor3);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+
+  }
+  
+  .active, .accordion:hover {
+    background-color: white;
+    color: var(--cor3); 
+    font-weight: bolder;
+  }
+  
+  .panel {
+    padding: 10px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  section.faq{
+    overflow: hidden;
+  }
+
+  article.faq > h1{
+    font-size: 30px;
+    font-family: var(--fontep);
+    color: var(--cor3);
+    text-align: center;
+    overflow: hidden;
+  }
+/*Fim dúvidas*/
