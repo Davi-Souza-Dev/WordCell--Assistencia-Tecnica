@@ -24,7 +24,7 @@
 
       }
 
-    nav.menu-desktop{
+    header > nav.menu-desktop{
         display: flex;
     }
 
