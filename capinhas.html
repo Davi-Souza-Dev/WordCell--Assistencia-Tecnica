@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PFECBYB58R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-PFECBYB58R');
+    </script>
+
+
     <title>Capinhas</title>
     <style>
         /*Carrosel*/
@@ -127,10 +139,51 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
           }
           
           section.LP-Capinha > article {
              width: 50%;
+          }
+
+          .slideshow-container {
+            width: 100%;
+            position: relative;
+            margin: auto;
+            margin-top: 50px;
+            border: 2px solid black;
+          }
+
+          section.LP-Capinha > article  > h1{
+              font-size: 50px;
+          } 
+
+          section.LP-Capinha > article  > p{
+              font-size: 20px;
+              width: 100%;
+          } 
+
+          section.LP-Capinha > article > div > div.btn{
+            width: 180px;
+            height: 40px;
+          }
+        }
+
+        @media screen and (min-width: 900px) {
+          section.LP-Capinha {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+          
+          section.LP-Capinha > article{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 40%;
           }
 
           .slideshow-container {
@@ -141,13 +194,31 @@
             border: 2px solid black;
           }
 
-          section.LP-Capinha{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+          section.LP-Capinha > article  > h1{
+              font-size: 50px;
+          } 
+
+          section.LP-Capinha > article  > p{
+              font-size: 30px;
+              width: 100%;
+          } 
+
+          section.LP-Capinha > article#combos{
+              margin-top: 20px;
+              justify-content: space-evenly;
+              flex-direction: row;
+              width: 100%;
+          } 
+
+          section.LP-Capinha > article > div > div.btn{
+            width: 180px;
+            height: 40px;
           }
 
+          div.op{
+            width: 300px;
+            height: 450px;
+          }
 
         }
 
@@ -195,24 +266,21 @@
     </nav>
   </header>
     <section class="LP-Capinha">
-        <article>
+        <article id="imagem">
           <div class="slideshow-container">
               <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="imagens/produtos/Produtos/Cases/Iphone.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
               </div>
           
               <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="imagens/produtos/Produtos/Cases/Capinha 1.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
               </div>
           
               <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="imagens/produtos/Produtos/Cases/Xiaomi.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
               </div>
           
               <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -250,9 +318,9 @@
               }
               </script>
         </article>
-        <article>
-          <H1>HEADLINE</H1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quaerat assumenda mollitia repellendus. Aperiam beatae, cumque autem tempora recusandae nisi hic voluptatem, fuga officiis nam, soluta porro consectetur. Iure, doloribus.</p>
+        <article id="copy">
+          <H1>OFERTA EM DOBRO!</H1>
+          <p>Eu sei, deixar o celular cair e muito triste, então porque não deixa-lo mais protegido de uma vez só. Aproveite para economizar com nossas <strong>capinhas de silicone por R$20,00</strong>. Achou caro? Então que tal levar duas por R$30,00 ou ainda Comprar uma capinha e uma película pelo mesmo valor?</p>
           <p class="desconto"> de R$39,99</p>
           <p class="price"> por R$19,99</p>
           <div class="dropdown">
@@ -260,10 +328,11 @@
               Pedir
             </div>
             <div class="dropdown-content">
-              <a href="#">Iphone</a>
-              <a href="#">Xiaomi</a>
-              <a href="#">Samsung</a>
-              <a href="#">Motorola</a>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20uma%20capinha%20para%20IPHONE." target="_blank">Iphone</a>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20uma%20capinha%20para%20XIAOMI." target="_blank">Xiaomi</a>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20uma%20capinha%20para%20SAMSUNG." target="_blank">Samsung</a>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20uma%20capinha%20para%20MOTOROLA." target="_blank">Motorola</a>
+              <a href=https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20uma%20capinha%20para%20%5BMODELO%20DO%20CELULAR%5D. target="_blank">OUTRO</a>
             </div>
           </div>
 
@@ -271,14 +340,14 @@
             <div class="produtos">VER PRODUTOS</div>
           </a>
         </article>
-        <article>
+        <article id="combos">
             <div class="op">
               <h1>
                   COMBO 1
               </h1>
-              <img src="" alt="foto">
-              <h2>3 capinhas por R$30,00</h2>
-              <a href="#">
+              <img src="imagens/produtos/Produtos/Cases/Combo1.jpeg" alt="foto">
+              <h2>2 capinhas por R$30,00</h2>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20o%20combo%201%20que%20est%C3%A1%20no%20site." target="_blank">
                 ESCOLHER
               </a>
             </div>
@@ -286,9 +355,9 @@
               <h1>
                   COMBO 2
               </h1>
-              <img src="" alt="foto">
-              <h2>2 capinhas + Pélicula por R$40,00</h2>
-              <a href="#">
+              <img src="imagens/produtos/Produtos/Cases/Combo2.jpeg" alt="foto">
+              <h2>Capinha + Película por R$30,00</h2>
+              <a href="https://api.whatsapp.com/send?phone=5511949357513&text=Olha%20gostaria%20de%20pedir%20o%20combo%202%20que%20est%C3%A1%20no%20site." target="_blank">
                 ESCOLHER
               </a>
             </div>
