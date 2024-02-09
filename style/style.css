@@ -1118,6 +1118,7 @@ article.secundario > div.btn{
 
   article > div.card{
     margin-top: 80px;
+    margin-bottom: 20px;
     width: 200px;
     height: 300px;
     border-radius: 20px;
