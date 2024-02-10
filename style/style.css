@@ -1087,7 +1087,7 @@ article.secundario > div.btn{
     width: 120px;
     height: 60px;
     border-radius: 20px;
-    background-color: #22F2F2;
+    background-color:  var(--cor2);
     text-align: center;
     line-height: 60px;
     font-family: var(--fontes);
